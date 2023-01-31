@@ -10,12 +10,25 @@
 		043378D32988553200CC3355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043378D22988553200CC3355 /* AppDelegate.swift */; };
 		043378D52988553200CC3355 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043378D42988553200CC3355 /* SceneDelegate.swift */; };
 		043378D72988553200CC3355 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043378D62988553200CC3355 /* ViewController.swift */; };
-		043378DA2988553200CC3355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043378D82988553200CC3355 /* Main.storyboard */; };
 		043378DC2988553400CC3355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043378DB2988553400CC3355 /* Assets.xcassets */; };
 		043378DF2988553400CC3355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043378DD2988553400CC3355 /* LaunchScreen.storyboard */; };
 		043378EA2988553500CC3355 /* GuidomiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043378E92988553500CC3355 /* GuidomiaTests.swift */; };
 		043378F42988553500CC3355 /* GuidomiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043378F32988553500CC3355 /* GuidomiaUITests.swift */; };
 		043378F62988553500CC3355 /* GuidomiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043378F52988553500CC3355 /* GuidomiaUITestsLaunchTests.swift */; };
+		043379082988583600CC3355 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043379072988583600CC3355 /* HomeViewController.swift */; };
+		0433790B298858E800CC3355 /* GuidomiaNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433790A298858E800CC3355 /* GuidomiaNavigationController.swift */; };
+		0433790D29885A8000CC3355 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433790C29885A8000CC3355 /* MainCoordinator.swift */; };
+		0433790F298861AA00CC3355 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433790E298861AA00CC3355 /* HomeViewModel.swift */; };
+		04337911298866D300CC3355 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04337910298866D300CC3355 /* HomeViewController.xib */; };
+		0433791329899DE600CC3355 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433791229899DE600CC3355 /* Car.swift */; };
+		0433791529899E2F00CC3355 /* car_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 0433791429899E2E00CC3355 /* car_list.json */; };
+		0433791729899F6A00CC3355 /* CarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433791629899F6A00CC3355 /* CarsService.swift */; };
+		0433791B2989A1B500CC3355 /* JsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433791A2989A1B500CC3355 /* JsonLoader.swift */; };
+		0433792C2989A83200CC3355 /* GuidomiaDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433792B2989A83200CC3355 /* GuidomiaDecoder.swift */; };
+		043379312989B53100CC3355 /* CarCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433792F2989B53100CC3355 /* CarCellView.swift */; };
+		043379322989B53100CC3355 /* CarCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043379302989B53100CC3355 /* CarCellView.xib */; };
+		043379352989C1B800CC3355 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043379342989C1B800CC3355 /* CarModel.swift */; };
+		043379382989CE8300CC3355 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043379372989CE8300CC3355 /* UIStackView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +53,6 @@
 		043378D22988553200CC3355 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043378D42988553200CC3355 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		043378D62988553200CC3355 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		043378D92988553200CC3355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		043378DB2988553400CC3355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043378DE2988553400CC3355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043378E02988553400CC3355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +61,20 @@
 		043378EF2988553500CC3355 /* GuidomiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuidomiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043378F32988553500CC3355 /* GuidomiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITests.swift; sourceTree = "<group>"; };
 		043378F52988553500CC3355 /* GuidomiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		043379072988583600CC3355 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0433790A298858E800CC3355 /* GuidomiaNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaNavigationController.swift; sourceTree = "<group>"; };
+		0433790C29885A8000CC3355 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		0433790E298861AA00CC3355 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		04337910298866D300CC3355 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		0433791229899DE600CC3355 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		0433791429899E2E00CC3355 /* car_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car_list.json; sourceTree = "<group>"; };
+		0433791629899F6A00CC3355 /* CarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsService.swift; sourceTree = "<group>"; };
+		0433791A2989A1B500CC3355 /* JsonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
+		0433792B2989A83200CC3355 /* GuidomiaDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaDecoder.swift; sourceTree = "<group>"; };
+		0433792F2989B53100CC3355 /* CarCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCellView.swift; sourceTree = "<group>"; };
+		043379302989B53100CC3355 /* CarCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCellView.xib; sourceTree = "<group>"; };
+		043379342989C1B800CC3355 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		043379372989CE8300CC3355 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +125,17 @@
 		043378D12988553200CC3355 /* Guidomia */ = {
 			isa = PBXGroup;
 			children = (
+				043379332989C1A600CC3355 /* ViewModels */,
+				04337909298858C400CC3355 /* Navigation */,
+				043379022988581E00CC3355 /* Models */,
+				043379062988581E00CC3355 /* Json */,
+				043379052988581E00CC3355 /* Services */,
+				043379032988581E00CC3355 /* ViewController */,
+				043379042988581E00CC3355 /* Views */,
 				043378D22988553200CC3355 /* AppDelegate.swift */,
+				043379362989CE3C00CC3355 /* Extension */,
 				043378D42988553200CC3355 /* SceneDelegate.swift */,
 				043378D62988553200CC3355 /* ViewController.swift */,
-				043378D82988553200CC3355 /* Main.storyboard */,
 				043378DB2988553400CC3355 /* Assets.xcassets */,
 				043378DD2988553400CC3355 /* LaunchScreen.storyboard */,
 				043378E02988553400CC3355 /* Info.plist */,
@@ -125,6 +158,76 @@
 				043378F52988553500CC3355 /* GuidomiaUITestsLaunchTests.swift */,
 			);
 			path = GuidomiaUITests;
+			sourceTree = "<group>";
+		};
+		043379022988581E00CC3355 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0433791229899DE600CC3355 /* Car.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		043379032988581E00CC3355 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				043379072988583600CC3355 /* HomeViewController.swift */,
+				04337910298866D300CC3355 /* HomeViewController.xib */,
+				0433790E298861AA00CC3355 /* HomeViewModel.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		043379042988581E00CC3355 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0433792F2989B53100CC3355 /* CarCellView.swift */,
+				043379302989B53100CC3355 /* CarCellView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		043379052988581E00CC3355 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0433791629899F6A00CC3355 /* CarsService.swift */,
+				0433791A2989A1B500CC3355 /* JsonLoader.swift */,
+				0433792B2989A83200CC3355 /* GuidomiaDecoder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		043379062988581E00CC3355 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				0433791429899E2E00CC3355 /* car_list.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		04337909298858C400CC3355 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0433790A298858E800CC3355 /* GuidomiaNavigationController.swift */,
+				0433790C29885A8000CC3355 /* MainCoordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		043379332989C1A600CC3355 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				043379342989C1B800CC3355 /* CarModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		043379362989CE3C00CC3355 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				043379372989CE8300CC3355 /* UIStackView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +334,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043379322989B53100CC3355 /* CarCellView.xib in Resources */,
 				043378DF2988553400CC3355 /* LaunchScreen.storyboard in Resources */,
 				043378DC2988553400CC3355 /* Assets.xcassets in Resources */,
-				043378DA2988553200CC3355 /* Main.storyboard in Resources */,
+				0433791529899E2F00CC3355 /* car_list.json in Resources */,
+				04337911298866D300CC3355 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +364,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				043378D72988553200CC3355 /* ViewController.swift in Sources */,
+				043379382989CE8300CC3355 /* UIStackView+Extension.swift in Sources */,
+				043379312989B53100CC3355 /* CarCellView.swift in Sources */,
+				0433790D29885A8000CC3355 /* MainCoordinator.swift in Sources */,
+				0433791329899DE600CC3355 /* Car.swift in Sources */,
+				0433792C2989A83200CC3355 /* GuidomiaDecoder.swift in Sources */,
+				0433790F298861AA00CC3355 /* HomeViewModel.swift in Sources */,
+				0433791B2989A1B500CC3355 /* JsonLoader.swift in Sources */,
 				043378D32988553200CC3355 /* AppDelegate.swift in Sources */,
 				043378D52988553200CC3355 /* SceneDelegate.swift in Sources */,
+				043379082988583600CC3355 /* HomeViewController.swift in Sources */,
+				043379352989C1B800CC3355 /* CarModel.swift in Sources */,
+				0433791729899F6A00CC3355 /* CarsService.swift in Sources */,
+				0433790B298858E800CC3355 /* GuidomiaNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +413,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		043378D82988553200CC3355 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				043378D92988553200CC3355 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		043378DD2988553400CC3355 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +550,7 @@
 				INFOPLIST_FILE = Guidomia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +578,7 @@
 				INFOPLIST_FILE = Guidomia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
