@@ -24,7 +24,11 @@ class HomeViewController: UIViewController {
     }
     func setUpView() {
         
+        self.carstableView.register(UINib(nibName: CarHeaderView.identifier, bundle: nil), forHeaderFooterViewReuseIdentifier: CarHeaderView.identifier)
         self.carstableView.register(UINib(nibName: CarCellView.identifier, bundle: Bundle.init(for: CarCellView.self)), forCellReuseIdentifier: CarCellView.identifier)
+        if #available(iOS 15, *) {
+            carstableView.sectionHeaderTopPadding = 0
+        }
     }
 }
 
@@ -41,6 +45,18 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: CarHeaderView.identifier) as? CarHeaderView {
+            view.fill(model: self.viewModel?.getHeaderVM())
+            return view
+        }
+        return UIView.init()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 450
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

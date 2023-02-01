@@ -42,10 +42,10 @@
                                         <color key="textColor" name="TextGray"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="120" placeholderIntrinsicHeight="20" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TkM-Kv-kb5">
-                                        <rect key="frame" x="167" y="72.333333333333329" width="120" height="20"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="120" placeholderIntrinsicHeight="20" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TkM-Kv-kb5">
+                                        <rect key="frame" x="167" y="77.333333333333329" width="120" height="15"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="Vov-fE-Q4A"/>
+                                            <constraint firstAttribute="height" constant="15" id="Vov-fE-Q4A"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>

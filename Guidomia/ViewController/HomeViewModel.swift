@@ -56,4 +56,22 @@ class HomeViewModel {
         }
         self.updateCarsList?()
     }
+    func getHeaderVM() -> HeaderModel {
+        
+        let makesArray = self.carsArray.map { $0.make ?? "" }.filter { !$0.isEmpty }
+        let modelsArray = self.carsArray.map { $0.model ?? "" }.filter { !$0.isEmpty }
+        var headerModel = HeaderModel(makesArray: makesArray, modelsArray: modelsArray, title: "Tacoma 2021", descriptionHeader: "Get your's now", imageName: "Tacoma")
+        
+        headerModel.selectMake = { [weak self] make in
+            if let cars = self?.carsArray.filter({ $0.make == make}) {
+                self?.getCarsViewModel(cars: cars)
+            }
+        }
+        headerModel.selectModel = { [weak self] model in
+            if let cars = self?.carsArray.filter({ $0.model == model}) {
+                self?.getCarsViewModel(cars: cars)
+            }
+        }
+        return headerModel
+    }
 }

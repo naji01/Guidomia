@@ -28,6 +28,9 @@
 		043379312989B53100CC3355 /* CarCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433792F2989B53100CC3355 /* CarCellView.swift */; };
 		043379322989B53100CC3355 /* CarCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043379302989B53100CC3355 /* CarCellView.xib */; };
 		043379352989C1B800CC3355 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043379342989C1B800CC3355 /* CarModel.swift */; };
+		0433793E298AA71F00CC3355 /* CarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433793D298AA71E00CC3355 /* CarHeaderView.swift */; };
+		04337940298AA78A00CC3355 /* CarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0433793F298AA78A00CC3355 /* CarHeaderView.xib */; };
+		04537E7B298AF66200B89951 /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04537E7A298AF66200B89951 /* HeaderModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		0433792F2989B53100CC3355 /* CarCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCellView.swift; sourceTree = "<group>"; };
 		043379302989B53100CC3355 /* CarCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCellView.xib; sourceTree = "<group>"; };
 		043379342989C1B800CC3355 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		0433793D298AA71E00CC3355 /* CarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHeaderView.swift; sourceTree = "<group>"; };
+		0433793F298AA78A00CC3355 /* CarHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarHeaderView.xib; sourceTree = "<group>"; };
+		04537E7A298AF66200B89951 /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +185,8 @@
 		043379042988581E00CC3355 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0433793D298AA71E00CC3355 /* CarHeaderView.swift */,
+				0433793F298AA78A00CC3355 /* CarHeaderView.xib */,
 				0433792F2989B53100CC3355 /* CarCellView.swift */,
 				043379302989B53100CC3355 /* CarCellView.xib */,
 			);
@@ -216,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				043379342989C1B800CC3355 /* CarModel.swift */,
+				04537E7A298AF66200B89951 /* HeaderModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -331,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04337940298AA78A00CC3355 /* CarHeaderView.xib in Resources */,
 				043379322989B53100CC3355 /* CarCellView.xib in Resources */,
 				043378DF2988553400CC3355 /* LaunchScreen.storyboard in Resources */,
 				043378DC2988553400CC3355 /* Assets.xcassets in Resources */,
@@ -364,6 +374,8 @@
 				043379312989B53100CC3355 /* CarCellView.swift in Sources */,
 				0433790D29885A8000CC3355 /* MainCoordinator.swift in Sources */,
 				0433791329899DE600CC3355 /* Car.swift in Sources */,
+				04537E7B298AF66200B89951 /* HeaderModel.swift in Sources */,
+				0433793E298AA71F00CC3355 /* CarHeaderView.swift in Sources */,
 				0433792C2989A83200CC3355 /* GuidomiaDecoder.swift in Sources */,
 				0433790F298861AA00CC3355 /* HomeViewModel.swift in Sources */,
 				0433791B2989A1B500CC3355 /* JsonLoader.swift in Sources */,
