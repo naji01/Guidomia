@@ -10,11 +10,12 @@ import UIKit
 class GuidomiaNavigationController: UINavigationController {
     
     override init(rootViewController: UIViewController) {
+        let color = UIColor(named: "Orange") ?? UIColor.orange
         super.init(rootViewController: rootViewController)
-        self.navigationBar.tintColor        = UIColor.orange
-        self.navigationBar.barTintColor     = UIColor.orange
-        self.navigationBar.isTranslucent    = false
-        self.navigationBar.backgroundColor = UIColor.orange
+        self.navigationBar.tintColor        = color
+        self.navigationBar.barTintColor     = color
+        self.navigationBar.isTranslucent    = true
+        self.navigationBar.backgroundColor = color
     }
     
     required init?(coder aDecoder: NSCoder) {

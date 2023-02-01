@@ -28,7 +28,6 @@
 		043379312989B53100CC3355 /* CarCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433792F2989B53100CC3355 /* CarCellView.swift */; };
 		043379322989B53100CC3355 /* CarCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043379302989B53100CC3355 /* CarCellView.xib */; };
 		043379352989C1B800CC3355 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043379342989C1B800CC3355 /* CarModel.swift */; };
-		043379382989CE8300CC3355 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043379372989CE8300CC3355 /* UIStackView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +73,6 @@
 		0433792F2989B53100CC3355 /* CarCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCellView.swift; sourceTree = "<group>"; };
 		043379302989B53100CC3355 /* CarCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCellView.xib; sourceTree = "<group>"; };
 		043379342989C1B800CC3355 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
-		043379372989CE8300CC3355 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,7 +223,6 @@
 		043379362989CE3C00CC3355 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				043379372989CE8300CC3355 /* UIStackView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -364,7 +361,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				043378D72988553200CC3355 /* ViewController.swift in Sources */,
-				043379382989CE8300CC3355 /* UIStackView+Extension.swift in Sources */,
 				043379312989B53100CC3355 /* CarCellView.swift in Sources */,
 				0433790D29885A8000CC3355 /* MainCoordinator.swift in Sources */,
 				0433791329899DE600CC3355 /* Car.swift in Sources */,

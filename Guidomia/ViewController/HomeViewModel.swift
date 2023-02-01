@@ -44,6 +44,16 @@ class HomeViewModel {
         cars.forEach { car in
             models.append(CarModel.getModel(car))
         }
+        models.first?.isExpanded = true
         carsViewModel = models
+    }
+    func selectCar(index: Int) {
+        
+        for i in 0 ..< carsViewModel.count {
+            
+            let carModel = carsViewModel[i]
+            carModel.isExpanded = index == i ? !carModel.isExpanded : false
+        }
+        self.updateCarsList?()
     }
 }
