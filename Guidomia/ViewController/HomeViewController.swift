@@ -10,14 +10,13 @@ import UIKit
 class HomeViewController: UIViewController {
     
     var viewModel: HomeViewModel?
-    
     @IBOutlet weak var carstableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
+        setUpNavigation()
         self.viewModel?.updateCarsList = { [weak self] in
-            
             self?.carstableView.reloadData()
         }
         self.viewModel?.getCarsRequest()
@@ -29,6 +28,13 @@ class HomeViewController: UIViewController {
         if #available(iOS 15, *) {
             carstableView.sectionHeaderTopPadding = 0
         }
+    }
+    func setUpNavigation() {
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .plain, target: self, action: nil)
+        let leftButton = UIBarButtonItem(title: "GUIDOMIA", style: .plain, target: self, action: nil)
+        leftButton.setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 25)], for: .normal)
+        navigationItem.leftBarButtonItem = leftButton
     }
 }
 
