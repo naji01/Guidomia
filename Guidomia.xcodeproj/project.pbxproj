@@ -31,6 +31,7 @@
 		0433793E298AA71F00CC3355 /* CarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433793D298AA71E00CC3355 /* CarHeaderView.swift */; };
 		04337940298AA78A00CC3355 /* CarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0433793F298AA78A00CC3355 /* CarHeaderView.xib */; };
 		04537E7B298AF66200B89951 /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04537E7A298AF66200B89951 /* HeaderModel.swift */; };
+		04537E7D298B14A400B89951 /* CarModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04537E7C298B14A400B89951 /* CarModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		0433793D298AA71E00CC3355 /* CarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHeaderView.swift; sourceTree = "<group>"; };
 		0433793F298AA78A00CC3355 /* CarHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarHeaderView.xib; sourceTree = "<group>"; };
 		04537E7A298AF66200B89951 /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
+		04537E7C298B14A400B89951 /* CarModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				043378E92988553500CC3355 /* GuidomiaTests.swift */,
+				04537E7C298B14A400B89951 /* CarModelTests.swift */,
 			);
 			path = GuidomiaTests;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04537E7D298B14A400B89951 /* CarModelTests.swift in Sources */,
 				043378EA2988553500CC3355 /* GuidomiaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
